@@ -3,5 +3,5 @@ class Plataforma: #creamos la clase Plataforma
         self.nombre = nombre
         self.precio = precio
     def calcular_subscripcion(self, meses): #creamos el método calcular_subscripción
-        total = meses * dicc[self].precio
+        total = meses * self.precio
         return total

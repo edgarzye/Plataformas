@@ -1,13 +1,7 @@
 # EDGAR GARCIA ALVAREZ
-# EJERCIO 1, ENTREGA 4
+# EJERCIO 1 GITHUB
 
-class Plataforma: #creamos la clase Plataforma
-    def __init__(self, nombre, precio): #creamos el método inicializador
-        self.nombre = nombre
-        self.precio = precio
-    def calcular_subscripcion(self, meses): #creamos el método calcular_subscripción
-        total = meses * dicc[self].precio
-        return total
+from clases import Plataforma
 
 def borrar():
     nombre = input("Introduce la plataforma a eliminar: ")
@@ -60,7 +54,8 @@ def suscribir():
     if not nombre in dicc:
         print("Error! No existe")
     else:
-        print(f"El precio de suscripción de {nombre} elegida es de {Plataforma.calcular_subscripcion(nombre, meses)} €") #usamos el método calcular_subscripción para obtener el precio de la misma
+        plat = dicc[nombre]
+        print(f"El precio de suscripción de {nombre} elegida es de {plat.calcular_subscripcion(meses)} €") #usamos el método calcular_subscripción para obtener el precio de la misma
     
 def main():
 
